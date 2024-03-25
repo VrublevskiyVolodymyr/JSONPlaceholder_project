@@ -1,0 +1,17 @@
+
+.container{
+    height: 100vh;
+}
+
+.light-theme {
+    background-color: white;
+    color: black;
+}
+
+.dark-theme {
+    background-image: url("../images/welcome.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}

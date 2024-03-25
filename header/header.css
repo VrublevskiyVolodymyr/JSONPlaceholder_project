@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    background: #000116;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@keyframes xxx {
+    0% {
+        left: -200px
+    }
+    100% {
+        left: 150%
+    }
+}
+
+.logo{
+    height: 100%;
+    width: 8vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 2vw;
+}
+.logo img{
+    width: 6vh;
+    height: 6vh;
+    vertical-align: -0.8vh;
+    border-radius: 25px;
+}
+.logo > span{
+    font-family: Montserrat, sans-serif;
+    color: #FFF;
+    font-size: 2.7vh;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+nav {
+    width: 28vw;
+    height: 2.4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    text-align: right;
+    font-weight: 400;
+    font-size: 2.5vh;
+    color: rgba(255, 255, 255, 0.70);
+    transition: 1s;
+}
+
+nav > a.active {
+    color: #5454D4;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+nav > a:hover {
+    transition: 1s;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px #8b5cca, 0 0 20px #8b5cca, 0 0 30px #8b5cca;
+    color: black;
+    background: #8b5cca;
+    border-radius: 4px;
+}
+
+header > button {
+    width: 11vw;
+    height: 4.3vh;
+    background: #19191B;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5vh;
+    color: rgba(255, 255, 255, 0.70);
+    box-shadow: 0 0 0 #8b5cca, 0 0 10px #8b5cca, 0 0 0 #8b5cca;
+    position: relative;
+    overflow: hidden;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(1px);
+    margin-right: 2vw;
+}
+
+header > button:hover {
+    color: #333;
+    cursor: pointer;
+    background-color: #8b5cca;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 0 0 10px #8b5cca, 0 0 20px #8b5cca, 0 0 30px #8b5cca;
+}
+/*header > button::before {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width: 50px;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    background: #ededed;*/
+/*    transform: skewX(170deg);*/
+/*    filter: blur(15px);*/
+/*    top: 0;*/
+/*    left: -20px;*/
+/*    animation: xxx 3500ms ease-in-out infinite;*/
+/*}*/
+
+header > button > a {
+    text-decoration: none;
+    font-size: 1.5vh;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    letter-spacing: -0.5px;
+    color: #FFF;
+}
+button:hover span:nth-child(1) {
+    left: 100%;
+}
+button:hover span:nth-child(2) {
+    top: 100%;
+}
+button:hover span:nth-child(3) {
+    right: 100%;
+}
+button:hover span:nth-child(4) {
+    bottom: 100%;
+}
+button span {
+    display: block;
+    position: absolute;
+    transition: 0.6s ease;
+}
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #8b5cca);
+    transition-delay: 0.25s;
+}
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #8b5cca);
+}
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #8b5cca);
+    transition-delay: 0.25s;
+}
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(0, transparent, #8b5cca);
+}
