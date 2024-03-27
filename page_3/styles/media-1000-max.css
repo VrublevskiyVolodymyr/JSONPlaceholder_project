@@ -1,0 +1,9 @@
+@media screen  and (max-width: 1000px) {
+
+    .contTitle{
+     grid-gap: 0;
+     margin: 0;
+     padding: 0;
+ }
+
+}

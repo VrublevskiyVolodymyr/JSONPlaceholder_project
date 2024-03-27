@@ -1,0 +1,12 @@
+@media screen  and (max-width: 500px) {
+    .users {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        gap: 5vh;
+        padding-bottom: 20px;
+    }
+
+    .user > button {
+        width: 250px;
+    }
+}

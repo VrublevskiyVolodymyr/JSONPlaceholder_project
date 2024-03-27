@@ -1,0 +1,21 @@
+@media screen  and (max-width: 1000px) {
+
+    .comments {
+        display: flex;
+        flex-direction: column;
+    }
+    .comment{
+        overflow: hidden;
+    }
+
+    .comments .empty-div {
+        display: none;
+    }
+
+    .container > .empty-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+}

@@ -69,7 +69,7 @@ function showUserDetails() {
     const buttonBack = document.createElement('button');
     buttonBack.innerText = 'Back'
     buttonBack.innerHTML += ` <span></span>  <span></span>  <span></span>  <span></span>`
-    buttonBack.onclick = function (){
+    buttonBack.onclick = function () {
         history.back()
     };
     buttonDiv.appendChild(buttonBack);
@@ -81,12 +81,14 @@ function showUserDetails() {
 function capitalizeFirstLetter(word) {
     return word.charAt(0).toUpperCase() + word.substring(1);
 }
+
 function capitalizeFirstLetterText(text) {
     const words = text.split(' ');
-   const firstWord  = words[0].charAt(0).toUpperCase() + words.shift().substring(1);
+    const firstWord = words[0].charAt(0).toUpperCase() + words.shift().substring(1);
     words.unshift(firstWord);
     return words.join(' ');
 }
+
 function showPosts(user) {
     const container = document.querySelector('div.container');
     const divContTitle = document.createElement('div');
@@ -103,9 +105,10 @@ function showPosts(user) {
 
             const buttonBack = document.createElement('button');
             buttonBack.innerText = 'Back'
-            buttonBack.innerHTML += ` <span></span>  <span></span>  <span></span>  <span></span>`
-            buttonBack.onclick = function (){
-                history.back()}
+            buttonBack.innerHTML += ` <span></span>  <span></span>  <span></span>  <span></span>`;
+            buttonBack.onclick = function () {
+                history.back()
+            }
             buttonDiv.appendChild(buttonBack);
 
             for (const post of posts) {
@@ -116,7 +119,7 @@ function showPosts(user) {
                 const button = document.createElement('button');
                 button.innerText = 'Post details';
                 button.innerHTML += ` <span></span>  <span></span>  <span></span>  <span></span>`
-                button.onclick = function (){
+                button.onclick = function () {
                     location.href = `../page_4/post-details.html?id=${post.id}&userId=${post.userId}`;
                 };
                 div.append(p, button);

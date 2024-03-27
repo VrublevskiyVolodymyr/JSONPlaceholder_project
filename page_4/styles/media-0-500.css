@@ -1,0 +1,14 @@
+@media screen  and (max-width: 500px) {
+    .post > h1 {
+       font-size: 25px;
+    }
+    .post{
+        margin-bottom: 20px;
+    }
+    .comment > h2 {
+        font-size: 18px;
+    }
+    .comment > h3 {
+        font-size: 15px;
+    }
+}

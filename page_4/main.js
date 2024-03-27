@@ -24,6 +24,17 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
             const divComments = document.createElement("div");
             divComments.classList.add('comments');
             divContainer.appendChild(divComments);
+
+            const buttonDiv = document.createElement('div');
+            buttonDiv.classList.add('empty-div');
+            const button = document.createElement('button');
+            button.innerText = 'Back';
+            button.innerHTML += ` <span></span>  <span></span>  <span></span>  <span></span>`
+            button.onclick = function () {
+                history.back()
+            };
+            buttonDiv.appendChild(button);
+
             for (let i = 0; i < comments.length; i++) {
                 const {id, name, email, body} = comments[i];
                 const divComment = document.createElement('div');
@@ -44,8 +55,8 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
                     const button = document.createElement('button');
                     button.innerText = 'Back';
                     button.innerHTML += ` <span></span>  <span></span>  <span></span>  <span></span>`
-                    button.onclick = function (){
-                       history.back()
+                    button.onclick = function () {
+                        history.back()
                     };
                     emptyDiv.appendChild(button);
                     divComments.appendChild(emptyDiv);
@@ -53,12 +64,10 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
 
                 divComments.appendChild(divComment);
             }
+            divContainer.appendChild(buttonDiv);
         }
     )
 
-// function capitalizeFirstLetter(word) {
-//     return word.charAt(0).toUpperCase() + word.substring(1);
-// }
 function capitalizeFirstLetterText(text) {
     const words = text.split(' ');
     const firstWord = words[0].charAt(0).toUpperCase() + words.shift().substring(1);

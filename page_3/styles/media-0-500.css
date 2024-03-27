@@ -1,0 +1,24 @@
+@media screen  and (max-width: 500px) {
+
+    .user-info {
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-gap: 5vh;
+        justify-content: center;
+    }
+
+    .user-info div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .user-div > button {
+        height: auto;
+    }
+
+    .contTitle {
+        grid-template-columns:  1fr 1fr;
+        grid-gap: 5vh;
+    }
+}

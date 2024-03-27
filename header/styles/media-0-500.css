@@ -1,0 +1,98 @@
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        height: 90vh;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 10vh;
+        opacity: 100%;
+        background: #000116;
+        z-index: +1;
+        left: 100%;
+        transition: left 0.5s ease;
+        animation-duration: 0.5s;
+        animation: slideInLeft 1000ms ease-in-out forwards;
+
+    }
+
+    @keyframes slideInLeft {
+        from {
+            left: 100%;
+        }
+        to {
+            left: 0;
+        }
+    }
+
+    nav.closed {
+        left: 0;
+        animation: slideOutLeft 1500ms ease-in-out forwards;
+
+    }
+
+    @keyframes slideOutLeft {
+        from {
+            left: 0;
+        }
+        to {
+            left: 100%;
+        }
+    }
+
+    nav a {
+        margin: 20px 0;
+    }
+
+    .logo > span {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 4vh;
+        height: 4vh;
+        margin: 0;
+    }
+
+    .menu hr {
+        width: 100%;
+        margin: 0;
+        transition: 0.3s;
+    }
+
+    .menu:hover {
+        cursor: pointer;
+    }
+
+    .menu:hover hr {
+        border-color: #8b5cca;
+        transition: 0.2s;
+    }
+
+    .menu.active hr:nth-of-type(1) {
+        transform: translate(0, 1.8vh) rotate(45deg);
+    }
+
+    .menu.active hr:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .menu.active hr:nth-of-type(3) {
+        transform: translate(0, -1.8vh) rotate(-45deg);
+    }
+
+}
