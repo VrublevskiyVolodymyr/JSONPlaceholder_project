@@ -1,0 +1,89 @@
+.container {
+    height: auto;
+    min-height: 100vh;
+}
+.container > h1{
+    text-align: center;
+}
+
+.light-theme {
+    background-image: url("../../images/post-details-light.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.70);
+    >h1{
+        color: #0e0f10;
+    }
+}
+
+.dark-theme {
+    background-image: url("../../images/posts-dark.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: "Lato", sans-serif;
+}
+
+.allButtons button {
+    background: #454446;
+    width: 14vw;
+    height: 5.8vh;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.70);
+    transition: 0.6s ease;
+    box-shadow: 0 0 1px #5a300e, 0 0 5px #5a300e, 0 0 10px #5a300e;
+    margin-top: 5px;
+}
+.allButtons  button:not(:disabled):hover {
+    cursor: pointer;
+    color: #333;
+    background-color: #8b5cca;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 0 0 1px #8b5cca, 0 0 5px #8b5cca, 0 0 10px #8b5cca;
+}
+
+button:disabled span {
+    opacity: 0;
+}
+
+.posts {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4vh;
+    padding: 10px;
+}
+
+.post {
+    height: auto;
+    box-shadow: 0 0 1px #5a300e, 0 0 5px #5a300e, 0 0 10px #5a300e;
+    border-radius: 15px;
+    margin: 5px 0;
+    background: #454446;
+    padding: 10px;
+}
+.allButtons{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    min-height: 10vh;
+    position: relative;
+    padding: 0 20px;
+}
+
+.allButtons > div{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.allButtons > div button:disabled{
+    color:#686e75;
+    background: #95989b;
+    cursor: auto;
+}

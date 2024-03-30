@@ -12,7 +12,10 @@
 }
 
 .dark-theme {
-    background: #000116 radial-gradient(70% 70% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 60%);
+    background-image: url("../../images/post-details-dark.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: rgba(255, 255, 255, 0.70);
     font-family: "Lato", sans-serif;
 }
@@ -87,7 +90,7 @@
     text-transform: uppercase;
     overflow: hidden;
     transition: 0.6s ease;
-    color: rgba(255, 255, 255, 0.70);;
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .empty-div > button:hover {

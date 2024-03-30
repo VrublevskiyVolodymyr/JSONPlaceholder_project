@@ -48,11 +48,11 @@ function header() {
     users.addEventListener('click', active);
     const posts = document.createElement('a');
     posts.innerText = 'Posts';
-    posts.href = '#';
+    posts.href = '../page_5/posts.html';
     posts.addEventListener('click', active);
     const about = document.createElement('a');
     about.innerText = 'About';
-    about.href = '#';
+    about.href = '../page_6/about.html';
     about.addEventListener('click', active);
     nav.append(home, users, posts, about);
 

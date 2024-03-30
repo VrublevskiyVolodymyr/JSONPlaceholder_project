@@ -4,6 +4,7 @@ const divContainer = document.querySelector("div.container");
 const divPost = document.createElement("div");
 divPost.classList.add('post');
 divContainer.appendChild(divPost);
+
 fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
     .then((response) => response.json())
     .then(posts => {
@@ -17,7 +18,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
             divPost.append(h2, h1Title, pBody);
         }
     )
-// 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
+
 fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
     .then((response) => response.json())
     .then(comments => {
