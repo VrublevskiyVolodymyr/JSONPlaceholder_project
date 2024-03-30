@@ -36,4 +36,4 @@ Contributions are welcome. Please open a pull request or issue to discuss change
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
