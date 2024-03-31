@@ -40,7 +40,7 @@ function header() {
     const nav = document.createElement('nav');
     const home = document.createElement('a');
     home.innerText = 'Home';
-    home.href = '../page_1/home_page.html';
+    home.href = '../page_1/index.html';
     home.addEventListener('click', active);
     const users = document.createElement('a');
     users.innerText = 'Users';
@@ -94,11 +94,11 @@ function active(e) {
 document.addEventListener('DOMContentLoaded', function () {
 
     const pathParts = location.pathname.split('/');
-    const currentPage = pathParts[pathParts.length - 1];
+    const currentPage = pathParts[pathParts.length - 2];
 
     document.querySelectorAll('nav a').forEach(function (el) {
         const hrefParts = el.pathname.split('/');
-        const linkPage = hrefParts[hrefParts.length - 1];
+        const linkPage = hrefParts[hrefParts.length - 2];
 
         if (currentPage === linkPage) {
             el.classList.add('active');
