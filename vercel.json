@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/page_1/(.*)", "dest": "/page_1/index.html" },
+    { "src": "/page_2/(.*)", "dest": "/page_2/index.html" }
+  ],
+  "rewrites": [{ "source": "/page_1/(.*)", "destination": "/page_1/index.html" }],
+  "cleanUrls": true
+}

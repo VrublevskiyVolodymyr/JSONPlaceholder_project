@@ -22,7 +22,7 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/VrublevskiyVolodymyr/JSONPlaceholder_project.git`
 2. Navigate to the project directory: `cd your-project`
-3. Open the `page_1/home_page.html` file in a web browser or code editor to make changes.
+3. Open the `page_1/index.html` file in a web browser or code editor to make changes.
 
 ## Features
 
