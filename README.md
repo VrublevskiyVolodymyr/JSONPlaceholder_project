@@ -2,7 +2,7 @@
 
 This project is a web application that fetches and displays data from the JSONPlaceholder API. It consists of several pages:
 
-- **Home Page.**
+- **Home Page.** The main landing page of the project.
 - **Users:** Displays a list of users with their IDs and names. Each user block includes a button/link to view more details.
 - **User Details:** Displays detailed information about a selected user, including their name, username, email, address, phone number, and website. Additionally, it includes a button to view all posts of the current user.
 - **Post Details:** Displays detailed information about a selected post, including the post title and body. It also includes comments related to the post.
@@ -22,7 +22,7 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/VrublevskiyVolodymyr/JSONPlaceholder_project.git`
 2. Navigate to the project directory: `cd your-project`
-3. Open the `index.html` file in a web browser or code editor to make changes.
+3. Open the `page_1/home_page.html` file in a web browser or code editor to make changes.
 
 ## Features
 

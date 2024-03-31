@@ -1,0 +1,8 @@
+{
+  "name": "JSONPlaceholder_project",
+  "version": "1.0.0",
+  "main": "page_1/home_page.html",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
