@@ -1,3 +1,5 @@
+/*___________________________________________CONTAINER___________________________________________*/
+
 .container {
     height: auto;
     min-height: 100vh;
@@ -19,6 +21,7 @@
     color: rgba(255, 255, 255, 0.70);
     font-family: "Lato", sans-serif;
 }
+/*___________________________________________POST___________________________________________*/
 
 .post {
     display: flex;
@@ -40,6 +43,7 @@
     margin: 5px;
     text-align: center;
 }
+/*___________________________________________COMMENTS___________________________________________*/
 
 .comments {
     display: grid;
@@ -72,6 +76,7 @@
     width: 85%;
     margin: 10px;
 }
+/*___________________________________________BUTTON_BACK___________________________________________*/
 
 .empty-div {
     display: flex;
@@ -148,6 +153,8 @@ button span:nth-child(4) {
     height: 100%;
     background: linear-gradient(0, transparent, #8b5cca);
 }
+/*___________________________________________EMPTY_DIV_FOR_MOBILE___________________________________________*/
+
 .container > .empty-div{
     display: none;
 }

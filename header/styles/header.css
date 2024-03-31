@@ -2,6 +2,7 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+/*___________________________________________HEADER___________________________________________*/
 
 .light-header {
     background: #060649;
@@ -15,6 +16,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+/*___________________________________________LOGO___________________________________________*/
 
 .logo {
     height: 100%;
@@ -40,6 +42,7 @@ header {
     line-height: 140%;
     margin-left: 5px;
 }
+/*___________________________________________NAV___________________________________________*/
 
 nav {
     display: flex;
@@ -80,6 +83,7 @@ nav a:hover {
     background: #8b5cca;
     border-radius: 4px;
 }
+/*___________________________________________BUTTON___________________________________________*/
 
 header > button {
     width: 11vw;

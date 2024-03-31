@@ -1,3 +1,5 @@
+/*___________________________________________CONTAINER___________________________________________*/
+
 .container {
     height: auto;
     min-height: 100vh;
@@ -7,12 +9,13 @@
 }
 
 .light-theme {
-    background-image: url("../../images/post-details-light.jpeg");
+    background-image: url("../../images/about-light.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: black;
 }
+
 .dark-theme {
     background-image: url("../../images/about-dark.jpeg");
     background-size: cover;
@@ -21,7 +24,11 @@
     color: #e8e8ef;
     font-family: "Lato", sans-serif;
 }
-.content{
+
+/*___________________________________________CONTENT___________________________________________*/
+
+
+.content {
     padding: 0 20px;
 }
 
@@ -50,6 +57,7 @@ strong {
     /*color: #555;*/
 }
 
+/*___________________________________________FOOTER___________________________________________*/
 
 footer {
     height: 20vh;
@@ -90,6 +98,7 @@ footer {
     box-shadow: 0 0 0 #8b5cca, 0 0 10px #8b5cca, 0 0 0 #8b5cca;
     margin-top: 1vh;
 }
+
 .footer-contact > button:hover {
     cursor: pointer;
     color: #333;

@@ -1,3 +1,5 @@
+/*___________________________________________CONTAINER___________________________________________*/
+
 .container {
     height: auto;
     min-height: 100vh;
@@ -7,7 +9,7 @@
 }
 
 .light-theme {
-    background-image: url("../../images/post-details-light.jpeg");
+    background-image: url("../../images/post-light.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -26,6 +28,47 @@
     font-family: "Lato", sans-serif;
 }
 
+
+/*___________________________________________POSTS___________________________________________*/
+
+.posts {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4vh;
+    padding: 10px;
+}
+
+.post {
+    height: auto;
+    box-shadow: 0 0 1px #5a300e, 0 0 5px #5a300e, 0 0 10px #5a300e;
+    border-radius: 15px;
+    margin: 5px 0;
+    background: #454446;
+    padding: 10px;
+}
+/*___________________________________________BUTTONS___________________________________________*/
+
+.allButtons{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    min-height: 10vh;
+    position: relative;
+    padding: 0 20px;
+}
+
+.allButtons > div{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.allButtons > div button:disabled{
+    color:#686e75;
+    background: #95989b;
+    cursor: auto;
+}
 .allButtons button {
     background: #454446;
     width: 14vw;
@@ -49,41 +92,4 @@
 
 button:disabled span {
     opacity: 0;
-}
-
-.posts {
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4vh;
-    padding: 10px;
-}
-
-.post {
-    height: auto;
-    box-shadow: 0 0 1px #5a300e, 0 0 5px #5a300e, 0 0 10px #5a300e;
-    border-radius: 15px;
-    margin: 5px 0;
-    background: #454446;
-    padding: 10px;
-}
-.allButtons{
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    min-height: 10vh;
-    position: relative;
-    padding: 0 20px;
-}
-
-.allButtons > div{
-    display: flex;
-    width: 30vw;
-    justify-content: space-between;
-}
-
-.allButtons > div button:disabled{
-    color:#686e75;
-    background: #95989b;
-    cursor: auto;
 }

@@ -1,3 +1,5 @@
+/*___________________________________________CONTAINER___________________________________________*/
+
 .container {
     height: auto;
     min-height: 100vh;
@@ -43,6 +45,7 @@
 .container > h1 {
     text-align: center;
 }
+/*___________________________________________USER___________________________________________*/
 
 .user-div {
     height: auto;
@@ -149,6 +152,8 @@
     height: 100%;
     background: linear-gradient(0, transparent, #8b5cca);
 }
+/*___________________________________________USER_INFO___________________________________________*/
+
 .user-info {
     height: 100%;
     display: flex;
@@ -169,6 +174,8 @@
 .user-info h2 {
     margin: 0;
 }
+/*___________________________________________TITLES___________________________________________*/
+
 .contTitle {
     height: auto;
     display: grid;
@@ -177,35 +184,6 @@
     grid-gap: 4vh;
     margin: 20px;
     padding-left: 20px;
-}
-.div-button{
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-.div-button > button {
-    width: 30%;
-    min-width: 6%;
-    height: 30px;
-    text-align: center;
-    position: relative;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 0.6s ease;
-    color: rgba(255, 255, 255, 0.70);
-    background: #1a212b;
-    border-radius: 15px;
-    box-shadow: 0 0 0 #3c0b07, 0 0 10px #3c0b07, 0 0 0 #3c0b07;
-    margin: 10px;
-}
-.div-button > button:hover {
-    cursor: pointer;
-    background-color: #8b5cca;
-    color: #e8e8ef;
-    border-radius: 10px;
-    transition: 1s;
-    box-shadow: 0 0 10px #8b5cca, 0 0 20px #8b5cca, 0 0 30px #8b5cca;
 }
 
 .title {
@@ -218,7 +196,6 @@
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeIn 0.5s ease forwards;
-    /*margin: 10px;*/
 }
 
 .title > button {
@@ -261,6 +238,37 @@
     margin-bottom: 10px;
 }
 .button-div > button:hover {
+    cursor: pointer;
+    background-color: #8b5cca;
+    color: #e8e8ef;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 0 0 10px #8b5cca, 0 0 20px #8b5cca, 0 0 30px #8b5cca;
+}
+/*___________________________________________BUTTON_BACK___________________________________________*/
+
+.div-button{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.div-button > button {
+    width: 30%;
+    min-width: 6%;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.6s ease;
+    color: rgba(255, 255, 255, 0.70);
+    background: #1a212b;
+    border-radius: 15px;
+    box-shadow: 0 0 0 #3c0b07, 0 0 10px #3c0b07, 0 0 0 #3c0b07;
+    margin: 10px;
+}
+.div-button > button:hover {
     cursor: pointer;
     background-color: #8b5cca;
     color: #e8e8ef;
